@@ -2,27 +2,27 @@
 
 // gsap cdn
 
-function loadingAnimation() {
-  var tl = gsap.timeline();
-  tl.from("#homePage", {
-    opacity: 0,
-  });
-  tl.from("#homePage", {
-    transform: "scaleX(0.7) scaleY(0.2) transalteY(-10%)",
-    borderRadius: "150px",
-    duration: 2,
-    ease: "expo.out",
-  });
-  tl.from(".heading", {
-    opacity: 0,
-  });
-  tl.from("#homePage h1, #homePage p, #homePage a, #homePage ul li", {
-    opacity: 0,
-    duration: 0.5,
-    stagger: 0.2,
-  });
-}
-loadingAnimation();
+// function loadingAnimation() {
+//   var tl = gsap.timeline();
+//   tl.from("#homePage", {
+//     opacity: 0,
+//   });
+//   tl.from("#homePage", {
+//     transform: "scaleX(0.7) scaleY(0.2) transalteY(-10%)",
+//     borderRadius: "150px",
+//     duration: 2,
+//     ease: "expo.out",
+//   });
+//   tl.from(".heading", {
+//     opacity: 0,
+//   });
+//   tl.from("#homePage h1, #homePage p, #homePage a, #homePage ul li", {
+//     opacity: 0,
+//     duration: 0.5,
+//     stagger: 0.2,
+//   });
+// }
+// loadingAnimation();
 // gsap cdn
 
 $(".portfolio-menu ul li").click(function () {
