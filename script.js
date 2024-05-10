@@ -72,6 +72,14 @@ const toggleNavbar = function () {
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
+// navItems Click
+
+// navItems.addEventListener("click", () => {
+//   toggleNavbar;
+// });
+
+// navItems Click
+
 /**
  * HEADER
  * active header when window scroll down to 100px

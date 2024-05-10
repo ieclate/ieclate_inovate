@@ -100,10 +100,9 @@ ion-icon {
   display: block;
 }
 
-.imageSize {
-  width: 358px;
-  height: 478px;
-}
+/* .imageSize {
+  height: 400px;
+} */
 
 a {
   color: inherit;
