@@ -70,7 +70,7 @@ const toggleNavbar = function () {
   document.body.classList.toggle("nav-active");
 };
 
-addEventListener("click", toggleNavbar);
+addEventOnElements(navTogglers, "click", toggleNavbar);
 
 /**
  * HEADER
