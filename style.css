@@ -1,3 +1,9 @@
+/* pages style */
+
+
+
+/* pages style */
+
 /* image slider */
 
 .image_container {
@@ -203,7 +209,7 @@ body.nav-active {
 .h3,
 .h4,
 .h5 {
-  color: var(--charcoal);
+  /* color: var(--charcoal); */
   font-weight: var(--fw-700);
   line-height: 1.3;
 }
