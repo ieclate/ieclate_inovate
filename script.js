@@ -1,5 +1,30 @@
 "use strict";
 
+// hero image auto sliders
+
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("slider-item");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  setTimeout(showSlides, 1500); // Change image every 2 seconds
+}
+
+// hero image auto sliders
+
 // gsap cdn
 
 // function loadingAnimation() {
@@ -86,70 +111,6 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
-
-/**
- * SLIDER
- */
-
-const sliders = document.querySelectorAll("[data-slider]");
-
-const initSlider = function (currentSlider) {
-  const sldierContainer = currentSlider.querySelector(
-    "[data-slider-container]"
-  );
-  const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
-  const sliderNextBtn = currentSlider.querySelector("[data-slider-next]");
-
-  let currentSlidePos = 0;
-
-  const moveSliderItem = function () {
-    sldierContainer.style.transform = `translateX(-${sldierContainer.children[currentSlidePos].offsetLeft}px)`;
-  };
-
-  /**
-   * NEXT SLIDE
-   */
-
-  const slideNext = function () {
-    const slideEnd = currentSlidePos >= sldierContainer.childElementCount - 1;
-
-    if (slideEnd) {
-      currentSlidePos = 0;
-    } else {
-      currentSlidePos++;
-    }
-
-    moveSliderItem();
-  };
-
-  sliderNextBtn.addEventListener("click", slideNext);
-
-  /**
-   * PREVIOUS SLIDE
-   */
-
-  const slidePrev = function () {
-    if (currentSlidePos <= 0) {
-      currentSlidePos = sldierContainer.childElementCount - 1;
-    } else {
-      currentSlidePos--;
-    }
-
-    moveSliderItem();
-  };
-
-  sliderPrevBtn.addEventListener("click", slidePrev);
-
-  const dontHaveExtraItem = sldierContainer.childElementCount <= 1;
-  if (dontHaveExtraItem) {
-    sliderNextBtn.style.display = "none";
-    sliderPrevBtn.style.display = "none";
-  }
-};
-
-for (let i = 0, len = sliders.length; i < len; i++) {
-  initSlider(sliders[i]);
-}
 
 /**
  * ACCORDION
