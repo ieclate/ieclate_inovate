@@ -430,7 +430,8 @@ body.nav-active {
 
 .navbar-link {
   font-weight: var(--fw-700);
-  padding-block: 6px;
+  padding-block: 10px;
+  padding-left: 1px;
 }
 
 .contact-link {
