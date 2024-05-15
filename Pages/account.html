@@ -46,12 +46,14 @@
 
 <body>
     <!-- navbar section -->
-    <header class="header" header_active style="background-color: #766c9e;">
+    <header class="header" data-header>
         <div class="container">
 
             <a href="../#homePage" class="logo">
-                <h1 class="logo-light" style="color: #fff; font-size: 4vw;">IECLATE INOVATE</h1>
-                <h1 class="logo-dark" style="color: #111; font-size: 4vw;">IECLATE INOVATE</h1>
+                <h1 class="logo-light" style="color: #fff; font-size: 4vw; padding-inline-start: 1rem; ">IECLATE INOVATE
+                </h1>
+                <h1 class="logo-dark" style="color: #111; font-size: 4vw; padding-inline-start: 1rem;">IECLATE INOVATE
+                </h1>
             </a>
 
             <nav class="navbar" data-navbar>
@@ -63,24 +65,32 @@
                     </button>
                 </div>
 
-                <ul class="navbar-list" style="text-transform: uppercase;">
+                <ul class="navbar-list" style="text-transform: uppercase; margin-inline-start: -19rem;">
 
                     <li>
-                        <a href="../#clientPage" class="navbar-link">Client List</a>
+                        <a href="../#clientPage" class="navbar-link"><i class="fa-solid fa-users"
+                                style="padding-right: 0.5rem; font-size: 1.5rem;"></i>Client List</a>
                     </li>
 
                     <li>
-                        <a href="../#aboutPage" class="navbar-link">About us</a>
+                        <a href="../#aboutPage" class="navbar-link"><i class="fa-solid fa-address-card"
+                                style="padding-right: 0.5rem; font-size: 1.5rem;"></i>About us</a>
                     </li>
 
                     <li>
-                        <a href="../#servicePage" class="navbar-link">Services</a>
+                        <a href="../#servicePage" class="navbar-link"><i class="fa-solid fa-user-doctor"
+                                style="padding-right: 0.5rem; font-size: 1.5rem;"></i>Services</a>
                     </li>
 
                     <li>
-                        <a href="../#brandingPage" class="navbar-link">Branding</a>
+                        <a href="../#brandingPage" class="navbar-link"><i class="fa-solid fa-rectangle-ad"
+                                style="padding-right: 0.5rem; font-size: 1.5rem;"></i>Branding</a>
                     </li>
 
+                    <li>
+                        <a href="../#contactPage" class="btn btn-primary btn-outline"><i class="fa-solid fa-headset"
+                                style="padding-right: 0.5rem; font-size: 1.5rem;"></i>CONTACT</a>
+                    </li>
                 </ul>
 
                 <div class="wrapper" style="margin-bottom: 5rem;">
@@ -90,7 +100,6 @@
                 </div>
             </nav>
 
-            <a href="#contactPage" class="btn btn-primary btn-outline">CONTACT</a>
 
             <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
                 <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
