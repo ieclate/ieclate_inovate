@@ -142,9 +142,9 @@ ion-icon {
   display: block;
 }
 
-.imageSize {
+/* .imageSize {
   height: 400px;
-}
+} */
 
 a {
   color: inherit;
@@ -412,6 +412,7 @@ body.nav-active {
   color: var(--white);
   font-size: 2rem;
   padding: 6px;
+  margin-inline-start: 20rem;
   border-radius: var(--radius-circle);
   transition: var(--transition-1);
 }
