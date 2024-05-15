@@ -142,9 +142,9 @@ ion-icon {
   display: block;
 }
 
-/* .imageSize {
+.imageSize {
   height: 400px;
-} */
+}
 
 a {
   color: inherit;
