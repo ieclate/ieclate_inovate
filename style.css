@@ -42,6 +42,10 @@
 
 /* image slider */
 
+.container {
+  width: 100vw;
+}
+
 .image_container {
   background-color: var(--cultured);
   width: 100%;
